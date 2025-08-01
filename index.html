@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğu Ekspresi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .hakkinda {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .text h2 {
+            color: #002142;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ✅ Mobil uyum */
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .image-footer {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-footer img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="resimler/logo.png" alt="Doğu Ekspresi Logo">
+        </div>
+        <div class="menu">
+            <a href="#hakkinda">Hakkımızda</a>
+            <a href="#tarihce">Tarihçe</a>
+            <a href="#guzergah">Güzergah</a>
+            <a href="#rezervasyon">Rezervasyon</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#sss">SSS</a>
+
+        </div>
+    </nav>
+
+    <!-- ✅ Tam ekran YouTube video bölümü -->
+    <header class="video-section">
+        <iframe
+            src="https://www.youtube.com/embed/WHeKsWtaG_A?start=35&end=70&autoplay=1&mute=1&controls=0&loop=1&playlist=WHeKsWtaG_A&vq=hd1080"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        <div class="content">
+            DOĞUNUN MASALSI RÜYASI
+        </div>
+    </header>
+
+
+
+
+
+    <section id="hakkinda">
+        <h2>Doğu Ekspresi Nedir?</h2>
+        <div class="row">
+            <div class="text">
+                <h2>Doğu Ekspresi</h2>
+                <p>Türkiye’nin en köklü ve simgesel tren
+                    hatlarından biri olan nostaljik Doğu
+                    Ekspresi’ni gelecekle buluşturan,
+                    turistik değeri yüksek bir marka
+                    yaratan ve kültürel zenginliği
+                    evrensel dile dönüştüren
+                    bir markayız.</p>
+            </div>
+            <div class="image">
+                <img src="resimler/resim1.jpeg" alt="Doğu Ekspresi">
+            </div>
+        </div>
+
+        <!-- Alt satır -->
+        <div class="row">
+            <div class="image">
+                <img src="resimler/doğu-ekspresi-yataklı-vagon-1.jpg" alt="Doğu Ekspresi">
+            </div>
+            <div class="text">
+                <h2>Unutulmaz Deneyim</h2>
+                <p>Doğu Ekspresi’ni sadece bir hat olmaktan çıkarıp,
+                    çağdaş ve bütüncül bir marka kimliği oluşturup
+                    global düzeyde tanınan bir turizm markası haline
+                    getirmek. Türkiye’nin turizm potansiyeline katkı
+                    sağlayacak çağdaş ve bütüncül bir marka kimliği
+                    oluşturup Doğu Ekspresi’ni global bir marka haline
+                    getirmek ana amacımız.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="train-image2">
+        <img src="resimler/aralıklar/en son kar tanesi_Çalışma Yüzeyi 1.png" alt="Train Illustration">
+    </div>
+
+
+
+    <section id="tarihce">
+        <h2>Doğu Ekspresinin Tarihçesi</h2> <br>
+
+        <p>Cumhuriyet’in doğu-batı bütünlüğü hedefinin bir parçası olarak planlanan hattın yapımı,
+            1930’lu yıllarda
+            başlamış, 1940’larda tamamlanmıştır Bu hat, 18 Ekim 1948’de ilk seferini yaparak hizmete girmiştir.
+            Başlangıçta taşıma ve kentlerarası bağlanırlık amaçlı kurulan Doğu Ekspresi, ilerleyen yıllarda kendine özgü
+            manzarası ve deneyimiyle Türkiye’de tren turizminin gözde rotalarından biri hâline gelmiştir.</p>
+        <br>
+
+        <p> Türkiye Cumhuriyeti’nin ilk yıllarında ülkeyi doğu ile batı arasında demiryolu ile bütünleştirmek temel
+            hedeflerden biriydi. Bu amaçla 1933’te başlamış olan Sivas–Erzurum demiryolu hattı, yerli mühendis ve
+            işçilerle yürütülerek 1939’da tamamlanmıştır. Bu yeni hat, Sovyet Rusya döneminde inşa edilmiş olan
+            Erzurum–Kars demiryolu hattı ile birleşmiştir ve böylece bugünkü Doğu Ekspresi güzergahının altyapısı
+            oluşturulmuştur. Hat tamamlanınca 13 Ekim 1948’de Cumhuriyet gazetesinde “Yataklı Vagonlar” manşetiyle
+            hattın hizmete alınışı ilân edilmiş, yalnızca beş gün sonra 18 Ekim 1948 tarihinde Doğu Ekspresi’nin ilk
+            seferi gerçekleştirilmiştir.
+            <br>
+            <br>
+            İlk dönemde Haydarpaşa (İstanbul) ile doğu illeri arasında haftada iki kez
+            hizmet veren tren, o zamanki adıyla Doğu Ekspresi, Anadolu’yu Batı’ya bağlayan öncelikli bir hat olarak
+            işlerlik kazanmıştır. Bu yıllarda hat, bağlı bulunduğu bölgenin stratejik kalkınması için önemli sayılmış;
+            Erzurum’da ulaşım vasıtası bulunmayan her türlü ürünün şehir dışına taşınmasını sağlamıştır.
+        </p>
+
+    </section>
+
+    <div class="train-image2">
+        <img src="resimler/aralıklar/en son kar tanesi_Çalışma Yüzeyi 1.png" alt="Train Illustration">
+    </div>
+
+    <section id="guzergah">
+        <h2>Güzergah</h2>
+        <p>Tren Ankara'dan hareket eder, Kırıkkale, Kayseri, Sivas, Erzincan ve Erzurum gibi şehirlerden geçerek Kars'a
+            ulaşır. Yaklaşık 24 saat süren bu yolculuk, doğa ve fotoğraf tutkunları için ideal bir rotadır.</p>
+    </section>
+
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="resimler/video-berkan1.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="train-image2">
+        <img src="resimler/aralıklar/en son kar tanesi_Çalışma Yüzeyi 1.png" alt="Train Illustration">
+    </div>
+
+
+
+    <section class="booking-section" id="rezervasyon">
+        <h2>Rezervasyon Yap</h2>
+        <form id="booking-form">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" required>
+
+            <label for="tel">Telefon:</label>
+            <input type="number" id="tel" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" required>
+
+            <label for="date">Tarih:</label>
+            <input type="date" id="date" required>
+
+            <label for="count">Kişi Sayısı:</label>
+            <input type="number" id="count" min="1" max="10" required>
+
+            <button type="submit">Rezervasyon Yap</button>
+        </form>
+
+        <div id="success-message" style="display: none;">
+            <p>Rezervasyonunuz başarıyla alındı!</p>
+        </div>
+    </section>
+
+    <div class="train-image2">
+        <img src="resimler/aralıklar/en son kar tanesi_Çalışma Yüzeyi 1.png" alt="Train Illustration">
+    </div>
+
+
+    <section id="galeri">
+        <h2>Galeri</h2>
+        <br>
+
+        <div>
+            <div class="image-section">
+                <img src="resimler/galeri_resimleri/164258.jpg" alt="Doğu Ekspresi 1" class="gallery-img">
+                <img src="resimler/galeri_resimleri/doğu-ekspresi-yataklı-vagon-1.jpg" alt="Doğu Ekspresi 2"
+                    class="gallery-img">
+                <img src="resimler/galeri_resimleri/214848.jpg" alt="Doğu Ekspresi 3" class="gallery-img">
+            </div>
+            <br>
+
+            <div class="image-section">
+                <img src="resimler/galeri_resimleri/DSC_0001.JPG" alt="Doğu Ekspresi 4" class="gallery-img">
+                <img src="resimler/galeri_resimleri/DSC_0006.JPG" alt="Doğu Ekspresi 5" class="gallery-img">
+                <img src="resimler/galeri_resimleri/DSC_0580.JPG" alt="Doğu Ekspresi 6" class="gallery-img">
+            </div>
+
+            <br>
+
+            <div class="image-section">
+                <img src="resimler/galeri_resimleri/DSC_0064.JPG" alt="Doğu Ekspresi 7" class="gallery-img">
+                <img src="resimler/galeri_resimleri/DSC_0583.JPG" alt="Doğu Ekspresi 8" class="gallery-img">
+                <img src="resimler/galeri_resimleri/DSC_0585.JPG" alt="Doğu Ekspresi 9" class="gallery-img">
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="closeBtn">&times;</span>
+        <span class="prev" id="prevBtn">&#10094;</span>
+        <img id="lightboxImg" src="">
+        <span class="next" id="nextBtn">&#10095;</span>
+    </div>
+
+
+
+    <div class="train-image2">
+        <img src="resimler/aralıklar/en son kar tanesi_Çalışma Yüzeyi 1.png" alt="Train Illustration">
+    </div>
+
+
+
+
+
+
+
+
+    <section id="sss">
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Doğu Ekspresi hangi şehirlerden geçer?</button>
+                <div class="accordion-content">
+                    <p>Tren Ankara, Kırıkkale, Kayseri, Sivas, Erzincan, Erzurum ve Kars güzergahında ilerler.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Biletleri ne kadar önce almak gerekir?</button>
+                <div class="accordion-content">
+                    <p>Biletler genelde hızla tükenir, en az 1-2 ay önceden almak önerilir.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Yolculuk kaç saat sürer?</button>
+                <div class="accordion-content">
+                    <p>Yaklaşık 30 saat sürmektedir.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Hangi tür vagonlar mevcut?</button>
+                <div class="accordion-content">
+                    <p>Doğu Ekspresi’nde şu vagon tipleri bulunmaktadır: <br> <br>
+
+                        Pulman (standart koltuklu) <br>
+
+                        Örtülü kuşetli (4 kişilik yataklı sistem) <br>
+
+                        Yataklı (2 kişilik özel kabin)</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header"> Trenlerde yemek servisi var mı?
+                </button>
+                <div class="accordion-content">
+                    <p>Evet, trenin yemekli vagonu bulunur. Burada sıcak yemekler, içecekler ve atıştırmalıklar
+                        sunulmaktadır. Turistik Doğu Ekspresi için özel yöresel menüler de bulunabilir.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Bagaj hakkı nedir?
+                </button>
+                <div class="accordion-content">
+                    <p>Yolcular, kendi yerlerine sığabilecek ölçüde bagaj getirebilirler. Trenlerde büyük valizler için
+                        ayrı bir bagaj bölümü bulunmamaktadır. </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header"> Mola veriliyor mu? Hangi duraklarda mola veriliyor?
+                </button>
+                <div class="accordion-content">
+                    <p> Turistik Doğu Ekspresi belirli duraklarda 2-3 saatlik molalar verir. Bu duraklar:
+                        <br><br>
+                        Sivas-180dk <br>
+
+                        Divriği-150dk <br>
+
+                        İliç-210dk <br>
+
+                        Erzincan-150dk <br>
+
+                        Erzurum-240dk <br>
+
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Hayvan kabul ediliyor mu?
+                </button>
+                <div class="accordion-content">
+                    <p>Küçük evcil hayvanlar, taşıma çantasında olmak kaydıyla pulman vagonlarda kabul edilmektedir.
+                        Yataklı veya kuşetli vagonlarda evcil hayvan kabul edilmemektedir. </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header"> Biletimi iptal edebilir miyim?
+                </button>
+                <div class="accordion-content">
+                    <p>Biletlerinizi sefer saatinden belirli bir süre öncesine kadar iptal edebilir veya açığa
+                        alabilirsiniz. TCDD’nin iptal/iadeye dair kuralları geçerlidir. </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Wi-Fi veya priz var mı?
+                </button>
+                <div class="accordion-content">
+                    <p> Yataklı vagonlarda priz bulunur, ancak tren genelinde Wi-Fi hizmeti sunulmamaktadır. Bazı
+                        bölgelerde mobil ağ çekmeyebilir.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Doğu Ekspresi hangi aylarda daha popüler?
+                </button>
+                <div class="accordion-content">
+                    <p> Aralık-Mart ayları arasında, kar manzaraları nedeniyle seferler çok yoğun olur. Özellikle bu
+                        dönemde erken rezervasyon önerilir.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header"> Kabinlerde neler var?
+                </button>
+                <div class="accordion-content">
+                    <p> Yataklı vagonlarda lavabo, priz, mini masa, raflar ve bazı kabinlerde mini buzdolabı bulunur.
+                        Tuvaletler ortak kullanım alanındadır.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">RayKart nedir?
+                </button>
+                <div class="accordion-content">
+                    <p>Doğu Ekspresi hattı boyunca yolculuklarınız için önceden belirleyeceğiniz iki istasyon arasında,
+                        yaş aralıgınıza, seçtiğiniz vagon tipine ve sınıfına göre aylık veya belirleyeceğiniz biniş
+                        sayısına göre farklı paketleri önceden indirimli olarak satın alabileceğiniz bir tren kartıdır.
+                        Ayrıca Doğu Ekspresi ringinde, şehir içi otobüs, metro, tramvay gibi ulaşım
+                        araçlarında da geçerlidir. </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="train-image">
+        <img src="resimler/aralıklar/istasyon-son.png" alt="Train Illustration">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Doğu Ekspresi Tanıtımı. Tüm hakları saklıdır.</p>
+    </footer>
+
+
+    <div class="image-footer">
+        <img src="resimler/galeri_resimleri/yatay foto 2.jpg" alt="Doğu Ekspresi">
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

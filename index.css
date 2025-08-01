@@ -1,0 +1,326 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body,
+        html {
+            background-color: #f4f4f4;
+            color: #333;
+            height: 100%;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #002142;
+            padding: 2rem 2rem;
+            display: flex;
+            justify-content: center;
+            /* Menü ortada */
+            align-items: center;
+            position: relative;
+            /* Logo için referans */
+            z-index: 3;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: 10px;
+            /* ✅ ekstra üst boşluk */
+        }
+
+        .logo img {
+            height: 120px;
+            /* Logo boyutu */
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 3 3rem;
+            font-weight: bold;
+        }
+
+        /* ✅ Tam ekran YouTube arkaplan */
+        header.video-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header.video-section iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120%;
+            height: 120%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        header.video-section .content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 0px;
+        }
+
+        .booking-section {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .booking-section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .booking-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .booking-section label {
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .booking-section input {
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .booking-section button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #002244;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        #success-message {
+            margin-top: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            color: green;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 950px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 1px;
+            display: block;
+            /* Inline boşlukları kaldırır */
+
+        }
+
+        /* Lightbox arka plan */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .lightbox .close,
+        .lightbox .prev,
+        .lightbox .next {
+            position: absolute;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .lightbox .close {
+            top: 20px;
+            right: 30px;
+        }
+
+        .lightbox .prev,
+        .lightbox .next {
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3rem;
+            padding: 10px;
+        }
+
+        .lightbox .prev {
+            left: 30px;
+        }
+
+        .lightbox .next {
+            right: 30px;
+        }
+
+
+
+
+
+
+
+
+        #sss {
+            max-width: 950px;
+            margin: 10px auto;
+            padding: 1px;
+
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 15px;
+            text-align: left;
+            font-size: 1.1rem;
+            background: #002142;
+            color: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background: #004080;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            background: #f9f9f9;
+            padding: 0 15px;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+
+        .accordion-content p {
+            padding: 15px 0;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 200px;
+            /* İçeriğe göre yükseklik */
+            padding: 0 15px 15px;
+        }
+
+
+        .train-image {
+            text-align: center;
+            padding: 0px;
+
+            width: 100%;
+            margin: 0;
+            /* Boşlukları kaldırmak için */
+            display: block;
+            /* Blok seviyesinde davranmasını sağlar */
+
+            line-height: 0;
+            /* Inline elemanlardan kaynaklanan boşlukları önler */
+            font-size: 0;
+            /* Inline elemanlardan kaynaklanan boşlukları önler */
+
+        }
+
+        .train-image img {
+            max-width: 100%;
+            height: fit-content;
+            width: 100%;
+            margin: 0;
+            /* Üstten ve alttan boşlukları kaldırır */
+            padding: 0;
+            /* Üstten ve alttan boşlukları kaldırır */
+        }
+
+
+
+
+        .train-image2 {
+            text-align: center;
+            margin: 0% 0;
+            width: 100%;
+
+        }
+
+        .train-image2 img {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+        }
